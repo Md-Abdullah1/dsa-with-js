@@ -4,8 +4,13 @@
 // Change the array nums such that the first k elements of nums contain the elements which are not equal to val. The remaining elements of nums are not important as well as the size of nums.
 // Return k.
 var removeElement = function (nums, val) {
-  console.log("nums before", nums, val);
-  nums = nums.filter((value) => value !== val);
-  console.log("nums after", nums, val);
-  return nums.length;
+  let k = 0;
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] != val) {
+      nums[k] = nums[i];
+      k++;
+    }
+  }
+
+  return k;
 };
