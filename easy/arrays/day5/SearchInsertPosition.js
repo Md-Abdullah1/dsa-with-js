@@ -4,12 +4,17 @@
 // Change the array nums such that the first k elements of nums contain the elements which are not equal to val. The remaining elements of nums are not important as well as the size of nums.
 // Return k.
 var searchInsert = function (nums, target) {
-  for (let i = 0; i < nums.length; i++) {
-    if (target === nums[i]) {
-      return i;
-    } else if (nums[i] > target) {
-      return i;
+  let left = 0,
+    right = nums.length - 1;
+  while (left <= right) {
+    const expectedIndex = Math.floor((right + left) / 2);
+    if (nums[expectedIndex] === target) {
+      return expectedIndex;
+    } else if (nums[expectedIndex] < target) {
+      left = expectedIndex + 1;
+    } else {
+      right--;
     }
-    console.log(i, nums[i], "yes", target, nums);
   }
+  return left;
 };
