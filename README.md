@@ -1,1 +1,1 @@
-A journey of learning and practicing DSA  with javaScript
+A journey of learning and practicing DSA concepts with javaScript
