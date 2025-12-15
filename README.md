@@ -1,1 +1,1 @@
-A Journey of Learning and Practicing DSA , its Concepts with JavaScript. 
+A Journey of Learning and Practicing DSA and its Concepts with JavaScript. 
