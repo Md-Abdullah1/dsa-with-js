@@ -1,1 +1,1 @@
-A Journey of Learning and Practicing DSA and concepts javaScript. 
+A Journey of Learning and Practicing DSA and concepts JavaScript. 
